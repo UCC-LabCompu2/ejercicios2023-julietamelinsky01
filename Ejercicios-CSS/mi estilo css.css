@@ -1,0 +1,21 @@
+
+body{
+    text-align:center;
+    font-family: "Goyi",cursive;
+}
+div{
+    border: 2px dashed #4CAF50;
+    margin: 10px;
+    padding: 5px 30px;
+}
+#principal{
+    width: 50px;
+    float: left;
+    border-radius: 50px;
+}
+div.especial h3{
+    font-family: "rubik",sans-serif;
+    text-shadow: 10px 5px #4CAF50;
+    box-shadow: 10px 12px #f1f1f1;
+
+}
