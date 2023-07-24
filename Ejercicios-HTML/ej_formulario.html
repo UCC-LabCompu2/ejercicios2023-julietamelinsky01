@@ -11,33 +11,66 @@
     </style>
 </head>
 <body>
-<!--Cree un Formulario con los campos que se proponen a continuacion-->
-<!--Agregue el atributo legend-->
 
-<!--Si tienes dudas de como hacer un formulario, puedes consultar:
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-<form></form>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
+<form id="formulario-suscripcion">
+   <p> Nombre: <input type="text" name="nombre" placeholder="nombre"> </p>
 
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
+   <p>  Apellido: <input type="text" name="apellido"></p>
 
-Agregue un comentario:
+    <p> Sexo: Masculino <input type="radio" name="sexo" value="masculino" placeholder="apellido ">
 
-Boton de Enviar
+        Femenino<input type="radio" name="sexo" value="femenino">
+    </p>
+
+    <p>
+        Edad: <input type="number" name="edad" placeholder="edad">
+    </p>
+
+    <p>
+
+        Email: <input type="number" name="email" placeholder="email@dominio.com">
+    </p>
+    <p>
+        Usuario: <input type="text" name="usiario" placeholder="usuario">
+    </p>
+    <p>
+        Password: <input type="password" name="pass" placeholder="password">
+    </p>
+    <p>
+        Confirmar Password: <input type="password" name="confirmar_pass">
+    </p>
+
+<p>
+    Tipo de servicio:
+    Free <input type="checkbox" name="tipo_servivicio" value="free">
+    Standard <input type="checkbox" name="tipo_servivicio" value="standard" >
+    Premium <input type="checkbox" name="tipo_servivicio" value="premium" >
+</p>
+
+    <p>
+        Tema:
+        <select>
+           <option> Política </option>
+            <option> Negocios </option>
+            <option>Tecnología </option>
+            <option> Salud </option>
+        </select>
+    </p>
+
+    <p>
+        Agregue un comentario: <textarea>
+    </textarea>
+    </p>
+
+<p>
+    <button type="button"> Boton de Enviar </button>
+</p>
+
+</form>
+
 
 
 </body>
