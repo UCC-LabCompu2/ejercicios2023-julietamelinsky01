@@ -6,6 +6,10 @@
  * @return (number) Valor que retorna
  */
 function cambiarUnidades(id,value){
+    var metro,pulgada,pie,yarda;
+    if(valor.includes(",")){
+        valor= valor.replace(",",",");
+    }
     if(isNaN(valor)){
 alert("se ingreso un valor invalido");
       document.lasunidades.unid_metro.value ="";
@@ -24,9 +28,9 @@ alert("se ingreso un valor invalido");
         document.lasunidades.unid_yarda =0.02777778*valor;
     }
     else if(id=="yarda"){
-        document.lasunidades.unid_metro.value = valor * 0.9144;
-        document.lasunidades.unid_pulgada.value = valor * 36;
-        document.lasunidades.unid_pie.value = valor * 3;
+        document.lasunidades.unid_metro.value = math.round(metro*100)/100;
+        document.lasunidades.unid_pulgada.value = math.round(pulgada*100)/100;
+        document.lasunidades.unid_pie.value = math.round(yarda*100)/100;
     }
 }
 function convertirGR(id){
