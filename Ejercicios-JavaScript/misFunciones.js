@@ -1,9 +1,9 @@
 /**
- * Descripción
- * @method Nombre de la función
- * @param Parámetro A
- * @param Parámetro B
- * @return Valor que retorna
+ * conversion de unidades, de metros, yardas,pies y `pulgadas
+ * @method cambiarunidades
+ * @param id de los imputs
+ * @param (string) Parámetro B
+ * @return (number) Valor que retorna
  */
 function cambiarUnidades(id,value){
     if(isNaN(valor)){
@@ -40,4 +40,12 @@ function convertirGR(id){
     }
     document.getElementById("grados").value = grad;
     document.getElementById("radianes").value = rad;
+}
+function mostrar_ocultar(valorMO) {
+    if (valorMO == "val_mostrar") {
+        document.getElementById("divmo").style.display = 'block';
+    } else if (valorMO == "val_ocultar") {
+        document.getElementById("divmo").style.display='none';
+
+    }
 }
