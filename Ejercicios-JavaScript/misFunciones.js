@@ -49,3 +49,9 @@ function mostrar_ocultar(valorMO) {
 
     }
 }
+function calcular() {
+  var num1,num2;
+  num1=document.getElementsByName("sum_num1")[0].value;
+    num1=document.getElementsByName("sum_num2")[0].value;
+    document.getElementsByName("num_total")[0].value=num1+num2;
+}
